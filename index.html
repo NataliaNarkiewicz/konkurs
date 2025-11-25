@@ -47,29 +47,48 @@
       text-shadow: 1px 1px 2px #000;
     }
 
-    /* Styl przycisku League of Legends */
- 
+  <title>Konkurs League of Legends</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
 
-    /* Styl przycisku z ozdobną ramką */
-    .btn {
-      display: inline-flex;
+    body {
+      background: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: 'Cinzel', serif;
+    }
+
+    .btn-square {
+      width: 200px;
+      height: 200px;
+      display: flex;
       align-items: center;
       justify-content: center;
-      padding: 1rem 2rem;
-      font-size: 1.2rem;
+      font-size: 2rem;
       font-weight: bold;
-      color: #f0e6d2;
+      color: white;
       text-decoration: none;
-      border: none;
-      background-image: url('ornate-gold-frame-clipart-9.jpg'); /* ← tu wstaw ścieżkę do ramki z różami */
+
+      /* ramka jako tło */
+      background-image: url('gold-frame-with-black-background-with-gold-frame_406811-22460.avif'); /* ← tu wstaw obrazek ramki */
       background-size: cover;
       background-position: center;
-      background-repeat: no-repeat;
-      width: 300px;
-      height: 100px;
+
+      /* czarne wnętrze */
+      background-color: black;
+      background-blend-mode: multiply; /* miesza ramkę z czarnym środkiem */
+
       box-shadow: 0 0 15px rgba(200, 170, 110, 0.6);
       transition: transform 0.3s ease;
     }
+
+    .btn-square:hover {
+      transform: scale(1.05);
+    }
+  </style>
 
     .btn:hover {
       transform: scale(1.05);
