@@ -10,7 +10,7 @@
       margin: 0;
     }
     body {
-      background-image: url('league-of-legends-pc-game-cover.jpg'); /* podmień na ścieżkę do swojego obrazu */
+      background-image: url('t.png'); /* podmień na ścieżkę do swojego obrazu */
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -48,8 +48,18 @@
     }
 
     /* Styl przycisku League of Legends */
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Przycisk LoL</title>
+  <style>
     .btn {
-      display: inline-block;
+      display: inline-flex;          /* flex zamiast inline-block */
+      align-items: center;           /* pionowe wyśrodkowanie */
+      justify-content: center;       /* poziome wyśrodkowanie */
+      gap: 0.5rem;                   /* odstęp między obrazkiem a tekstem */
+
       padding: 0.75rem 1.5rem;
       border-radius: 10px;
       border: 2px solid #c8aa6e;
@@ -61,6 +71,20 @@
       box-shadow: 0 0 10px rgba(200, 170, 110, 0.3);
       transition: all 0.2s ease;
     }
+    .btn img {
+      width: 24px;
+      height: 24px;
+    }
+  </style>
+</head>
+<body>
+  <!-- przycisk z obrazkiem i tekstem -->
+  <a href="#" class="btn">
+    <img src="league-of-legends-pc-game-cover.jpg" alt="Ikona">
+...
+  </a>
+
+
 
     .btn:hover {
       background: linear-gradient(to bottom, #4d3926, #2a1c10);
