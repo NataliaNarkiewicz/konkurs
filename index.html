@@ -48,41 +48,41 @@
     }
 
     /* Styl przycisku League of Legends */
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-  <meta charset="UTF-8">
-  <title>Przycisk LoL</title>
-  <style>
-    .btn {
-      display: inline-flex;          /* flex zamiast inline-block */
-      align-items: center;           /* pionowe wyśrodkowanie */
-      justify-content: center;       /* poziome wyśrodkowanie */
-      gap: 0.5rem;                   /* odstęp między obrazkiem a tekstem */
+ 
 
-      padding: 0.75rem 1.5rem;
-      border-radius: 10px;
-      border: 2px solid #c8aa6e;
-      background: linear-gradient(to bottom, #3c2c1e, #1e140a);
-      color: #f0e6d2;
+    /* Styl przycisku z ozdobną ramką */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
       font-weight: bold;
+      color: #f0e6d2;
       text-decoration: none;
-      font-size: 1.1rem;
-      box-shadow: 0 0 10px rgba(200, 170, 110, 0.3);
-      transition: all 0.2s ease;
+      border: none;
+      background-image: url('ornate-gold-frame-clipart-9.jpg'); /* ← tu wstaw ścieżkę do ramki z różami */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 300px;
+      height: 100px;
+      box-shadow: 0 0 15px rgba(200, 170, 110, 0.6);
+      transition: transform 0.3s ease;
     }
-    .btn img {
-      width: 24px;
-      height: 24px;
+
+    .btn:hover {
+      transform: scale(1.05);
     }
   </style>
 </head>
 <body>
-  <!-- przycisk z obrazkiem i tekstem -->
-  <a href="#" class="btn">
-    <img src="league-of-legends-pc-game-cover.jpg" alt="Ikona">
-Przejdź dalej!!!
-  </a>
+  <div class="overlay">
+    <div class="card">
+      <h1>Konkurs League of Legends</h1>
+      <a class="btn" href="index2podstrona.html">Zobacz więcej</a>
+    </div>
+  </div>
 
 
 
