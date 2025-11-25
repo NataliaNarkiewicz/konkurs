@@ -3,26 +3,25 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Strona z tłem jako obraz</title>
+  <title>Konkurs League of Legends</title>
   <style>
-    /* Ustawienia tła dla całej strony */
     html, body {
       height: 100%;
       margin: 0;
     }
     body {
-      background-image: url('league-of-legends-pc-game-cover.jpg');        /* podmień na ścieżkę do swojego obrazu */
-      background-size: cover;                  /* wypełnia ekran, zachowuje proporcje */
-      background-position: center;             /* centrowanie obrazu */
-      background-repeat: no-repeat;            /* brak powtarzania */
-      background-attachment: fixed;            /* „paralaksa” – tło nie przewija się */
-      color: #ffffff;                          /* czytelny tekst na tle */
-      font-family: system-ui, Arial, sans-serif;
+      background-image: url('league-of-legends-pc-game-cover.jpg'); /* podmień na ścieżkę do swojego obrazu */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #f0e6d2;
+      font-family: 'Cinzel', serif;
     }
 
-    /* Półprzezroczysta warstwa dla lepszej czytelności treści */
+    /* Półprzezroczysta warstwa */
     .overlay {
-      background: rgba(0, 0, 0, 0.45);
+      background: rgba(0, 0, 0, 0.6);
       min-height: 100%;
       display: flex;
       align-items: center;
@@ -31,32 +30,52 @@
       padding: 2rem;
     }
 
-    /* Kontener treści */
+    /* Stylizowana karta */
     .card {
       max-width: 800px;
-      backdrop-filter: blur(2px);
-      border-radius: 12px;
-      padding: 2rem;
-      border: 1px solid rgba(255, 255, 255, 0.25);
+      background: rgba(30, 20, 10, 0.8);
+      border: 2px solid #c8aa6e;
+      border-radius: 16px;
+      padding: 2.5rem;
+      box-shadow: 0 0 20px rgba(200, 170, 110, 0.5);
     }
 
+    .card h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      color: #c8aa6e;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    /* Styl przycisku League of Legends */
     .btn {
       display: inline-block;
-      padding: 0.75rem 1.25rem;
-      border-radius: 8px;
-      border: 1px solid rgba(255, 255, 255, 0.4);
-      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 10px;
+      border: 2px solid #c8aa6e;
+      background: linear-gradient(to bottom, #3c2c1e, #1e140a);
+      color: #f0e6d2;
+      font-weight: bold;
       text-decoration: none;
-      transition: background 0.2s ease, transform 0.1s ease;
+      font-size: 1.1rem;
+      box-shadow: 0 0 10px rgba(200, 170, 110, 0.3);
+      transition: all 0.2s ease;
     }
-    .btn:hover { background: rgba(255, 255, 255, 0.15); transform: translateY(-1px); }
+
+    .btn:hover {
+      background: linear-gradient(to bottom, #4d3926, #2a1c10);
+      transform: scale(1.05);
+      box-shadow: 0 0 15px rgba(200, 170, 110, 0.6);
+    }
+
+    /* Import stylowej czcionki */
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
   </style>
 </head>
 <body>
   <div class="overlay">
     <div class="card">
-      <h1>Konkurs</h1>
-     
+      <h1>Konkurs League of Legends</h1>
       <a class="btn" href="index2podstrona.html">Zobacz więcej</a>
     </div>
   </div>
