@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>League of Legends – Strona</title>
+  <style>
+    /* Ogólne ustawienia */
+    body {
+      margin: 0;
+      font-family: 'Cinzel', serif;
+      color: #f5f5f5;
+      background-image: url('lol_background.jpg'); /* podmień na swój obraz */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    /* Nakładka dla czytelności */
+    .overlay {
+      background: rgba(0, 0, 0, 0.7);
+      min-height: 100vh;
+      padding: 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #d4af37; /* złoty kolor */
+      text-shadow: 2px 2px 6px #000;
+      margin-bottom: 2rem;
+    }
+
+    table {
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      width: 80%;
+      max-width: 600px;
+      background: rgba(20, 20, 20, 0.85);
+      border: 2px solid #d4af37;
+      box-shadow: 0 0 15px rgba(0,0,0,0.8);
+    }
+
+    th, td {
+      padding: 1rem;
+      text-align: center;
+      border: 1px solid #d4af37;
+    }
+
+    th {
+      background: rgba(212, 175, 55, 0.2);
+      font-size: 1.2rem;
+      color: #d4af37;
+    }
+
+    a {
+      color: #d4af37;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: #fff;
+    }
+  </style>
+  <!-- Czcionka fantasy -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="overlay">
+    <h1>Witaj w świecie League of Legends</h1>
+
+    <!-- Tabela z regulaminem -->
+    <table>
+      <tr>
+        <th>Regulamin</th>
+      </tr>
+      <tr>
+        <td><a href="regulamin.html" target="_blank">Przeczytaj regulamin</a></td>
+      </tr>
+    </table>
+
+    <!-- Tabela z formularzem -->
+    <table>
+      <tr>
+        <th>Formularz</th>
+      </tr>
+      <tr>
+        <td><a href="formularz.html" target="_blank">Wypełnij formularz</a></td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
